@@ -1,3 +1,14 @@
+<div align="center">
+  <a href="https://identibyte.com">
+    <img src="https://identibyte.com/static/img/logo-120x120.png" width="100" alt="Identibyte logo" />
+  </a>
+</div>
+
+<div align="center">
+  <h1>Identibyte</h1>
+  <h4>Identify and classify email addresses, domain names, and IPs</h4>
+</div>
+
 # Identibyte examples
 
 This repo contains some examples for using Identibyte with various
