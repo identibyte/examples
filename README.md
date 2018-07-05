@@ -8,7 +8,7 @@
   <h1>Identibyte</h1>
 </div>
 
-# Identibyte examples
+## Identibyte examples
 
 This repo contains some examples for using Identibyte with various
 programming languages and popular libraries. Don't see an example for
