@@ -6,7 +6,6 @@
 
 <div align="center">
   <h1>Identibyte</h1>
-  <h4>Identify and classify email addresses, domain names, and IPs</h4>
 </div>
 
 # Identibyte examples
