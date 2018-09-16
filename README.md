@@ -16,12 +16,12 @@ your language? Submit a PR or open an issue!
 
 ## Directory
 
-- [Haskell](haskell/README.md)
-- [Node.js](nodejs/README.md)
-- [Python](python/README.md)
-- [JavaScript](javascript/README.md)
-- [React.js](javascript/README.md)
-- [Ruby](ruby/README.md)
+- [Haskell](haskell/)
+- [Node.js](node/)
+- [Python](python/)
+- [JavaScript](javascript/)
+- [React.js](javascript/)
+- [Ruby](ruby/)
 
 ## License
 
