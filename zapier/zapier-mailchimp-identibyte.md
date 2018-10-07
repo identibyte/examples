@@ -1,8 +1,9 @@
 ---
+title: Remove disposable emails from Mailchimp with Zapier and Identibyte
+author: Cody Reichert
+date: 2018/10/07
 layout: post
 ---
-
-## Manage disposable emails in Mailchimp with Zapier and Identibyte
 
 [Identibyte](https://identibyte.com) can help detect email addresses
 that use a disposable or anonymous provider. These aren't so bad most
