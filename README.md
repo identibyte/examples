@@ -17,8 +17,6 @@ your language? Submit a PR or open an issue!
 ## Directory
 
 #### Programming languages
-> Find your language...
-
 - [Haskell](haskell/)
 - [Node.js](node/)
 - [Python](python/)
@@ -26,10 +24,7 @@ your language? Submit a PR or open an issue!
 - [Ruby](ruby/)
 
 #### SaaS integrations (codeless)
-> Use a service...
-
-- [Zapier](zapier/)
-  - [MailChimp - Unsubscribe disposable emails](zapier/zapier-mailchimp-identibyte.md)
+- [Zapier and MailChimp - Unsubscribe disposable emails](zapier/zapier-mailchimp-identibyte.md)
 
 ## License
 
