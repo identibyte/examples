@@ -27,7 +27,7 @@ If you have the above, let's jump right in. Start by going in Zapier
 and opening a blank **new Zap template**. Then follow these steps:
 
 ##### Step 1 Trigger
-> Here we configure the MailChimp List is watch.
+> Here we configure the MailChimp List to watch.
 
 1. Select _Mailchimp_ as the first integration:
    ![Select MailChimp as step 1 integration](img/step-1.png)
@@ -61,10 +61,56 @@ and opening a blank **new Zap template**. Then follow these steps:
    and paste it into the field.
    After that, copy and paste the script in the dropdown below in the
    _Code_ input in Zapier (**No changes are necessary to the code**).
-   <details>
-     <summary>Copy this code</summary>
-       <pre>
-         <code class="js lang-js">
+
+   [**Copy this code**](#js-code-snippet)
+
+   ![Enter variables and code template](img/step-8.png)
+
+9. Test the step and you should see green:
+   ![Test your code step](img/step-9.png)
+
+##### Step 3 action
+> This is the last step, where we remove the subscriber from Mailchimp if the email address is disposable.
+
+10. Select _MailChimp_ as the action integration:
+    ![Select MailChimp as the step 3 integration](img/step-10.png)
+
+11. Choose _Unsubscribe Email_ as the action for this step:
+    ![Choose Unsubscribe Email as the step 3 action](img/step-11.png)
+
+12. Select your _MailChimp Account_ (must be the same as **Step 1**
+    settings).
+    ![Connect MailChimp to Zapier](img/step-3.png)
+
+13. Finalize the action by selecting the List (must be the same as
+    **Step 1** above) the subscriber's email (use the **email** in the
+    _MailChimp_ dropdown from Step 1). It's worth noting you can
+    optionally _delete_ the subscriber -- right now we're only
+    unsubscribing them.
+    ![Unsubscribe disposable email from MailChimp](img/step-12.png)
+
+## Conclusion
+
+And that's about it! Now, when a new subscriber used a disposable
+email address they will be **automatically unsubscribed from your
+MailChimp account by Identiybte**.
+
+![Identibyte remove disposable emails from MailChimp](img/step-13.png)
+
+Have any questions or problems setting it up? Let us know - we're
+happy to help! Reach out to [Identibyte on
+Twitter](https://twitter.com/Identibyte) or
+[@CodyReichert](https://twitter.com/CodyReichert).
+
+:: Cody Reichert
+
+---
+
+#### JS Code Snippet
+> To save room in the post I moved the snippet here.
+> You will not need to make any edits to this script.
+
+```js
 const https = require('https')
 
 /* Get input data from Zapier */
@@ -107,46 +153,4 @@ https.get(requestOptions, (res) => {
 })
 
 output = out
-       </code>
-     </pre>
-   </details>
-
-   ![Enter variables and code template](img/step-8.png)
-
-9. Test the step and you should see green:
-   ![Test your code step](img/step-9.png)
-
-##### Step 3 action
-> This is the last step, where we remove the subscriber from Mailchimp if the email address is disposable.
-
-10. Select _MailChimp_ as the action integration:
-    ![Select MailChimp as the step 3 integration](img/step-10.png)
-
-11. Choose _Unsubscribe Email_ as the action for this step:
-    ![Choose Unsubscribe Email as the step 3 action](img/step-11.png)
-
-12. Select your _MailChimp Account_ (must be the same as **Step 1**
-    settings).
-    ![Connect MailChimp to Zapier](img/step-3.png)
-
-13. Finalize the action by selecting the List (must be the same as
-    **Step 1** above) the subscriber's email (use the **email** in the
-    _MailChimp_ dropdown from Step 1). It's worth noting you can
-    optionally _delete_ the subscriber -- right now we're only
-    unsubscribing them.
-    ![Unsubscribe disposable email from MailChimp](img/step-12.png)
-
-## Conclusion
-
-And that's about it! Now, when a new subscriber used a disposable
-email address they will be **automatically unsubscribed from your
-MailChimp account by Identiybte**.
-
-![Identibyte remove disposable emails from MailChimp](img/step-13.png)
-
-Have any questions or problems setting it up? Let us know - we're
-happy to help! Reach out to [Identibyte on
-Twitter](https://twitter.com/Identibyte) or
-[@CodyReichert](https://twitter.com/CodyReichert).
-
-:: Cody Reichert
+```
