@@ -8,20 +8,16 @@
  */
 
 const https = require('https')
-
-// Get the email to check and set up options for the API request
-
 const email = 'email@mailinator.com'
 
-const reqOptions = {
+const requestOptions = {
     host: 'identibyte.com',
-    path: '/check/' + email,
-    auth: 'API_TOKEN:',
+    path: '/check/' + email + '?api_token=' + YOUR_API_TOKEN,
 }
 
 // Make the API request and wait for the response
 
-https.get(options, (res) => {
+https.get(requestOptions, (res) => {
     let body = ''
     res.on('data', chunk => body += chunk)
 
