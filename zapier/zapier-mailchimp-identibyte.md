@@ -1,3 +1,7 @@
+---
+layout: post
+---
+
 ## Manage disposable emails in Mailchimp with Zapier and Identibyte
 
 [Identibyte](https://identibyte.com) can help detect email addresses
