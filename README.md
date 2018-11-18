@@ -22,9 +22,10 @@ your language? Submit a PR or open an issue!
 - [Python](python/)
 - [React.js](reactjs/)
 - [Ruby](ruby/)
+- [PHP](php/)
 
 #### SaaS integrations (codeless)
-- [Zapier and MailChimp - Unsubscribe disposable emails](zapier/zapier-mailchimp-identibyte.md)
+- [Remove disposable emails from MailChimp wit Identibyte and Zapier](zapier/zapier-mailchimp-identibyte.md)
 
 ## License
 
